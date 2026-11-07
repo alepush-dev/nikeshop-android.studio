@@ -70,7 +70,7 @@ fun OnBoardingScreen(
         Spacer(modifier = Modifier.weight(0.8f))
 
         FloatingActionButton(
-            onClick = {},
+            onClick = {onNextClick()},
             containerColor = accentYellow,
             contentColor = Color.Black,
             shape = FloatingActionButtonDefaults.shape,
