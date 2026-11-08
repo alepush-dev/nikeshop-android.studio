@@ -1,0 +1,38 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "id": 1,
+      "title": "Nike Pegasus Plus 2",
+      "brand": "Nike",
+      "price": 459.9,
+      "description": "Zapatilla de running con amortiguación ligera.",
+      "image": "https://raw.githubusercontent.com/alepush-dev/nikeshop-android.studio/master/app/src/main/res/drawable-hdpi/nike_air_motion.png",
+      "category": "running",
+      "rating": 4.9,
+      "stock": 12
+    },
+    {
+      "id": 2,
+      "title": "Nike Ava Edge",
+      "brand": "Nike",
+      "price": 399.9,
+      "description": "Diseño versátil para el día a día.",
+      "image": "https://raw.githubusercontent.com/alepush-dev/nikeshop-android.studio/master/app/src/main/res/drawable-hdpi/asics_velocity_pro.png",
+      "category": "lifestyle",
+      "rating": 4.8,
+      "stock": 8
+    },
+    {
+      "id": 3,
+      "title": "Nike Air Force 1",
+      "brand": "Nike",
+      "price": 349.9,
+      "description": "Un clásico urbano.",
+      "image": "https://raw.githubusercontent.com/alepush-dev/nikeshop-android.studio/master/app/src/main/res/drawable-hdpi/adidas_runboost_x.png",
+      "category": "lifestyle",
+      "rating": 4.7,
+      "stock": 20
+    }
+  ]
+}

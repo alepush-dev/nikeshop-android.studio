@@ -32,6 +32,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil3.compose.AsyncImage
 import pe.isil.nikeshop.core.desingsystems.theme.AccentYellow
 import pe.isil.nikeshop.core.desingsystems.theme.CardBackground
 import pe.isil.nikeshop.features.home.domain.Product
@@ -51,8 +52,8 @@ fun ProductCard(
     ) {
         Column(modifier = Modifier.padding(12.dp)) {
             Box(modifier = Modifier.fillMaxWidth()) {
-                Image(
-                    painter = painterResource(product.image),
+                AsyncImage(
+                    model = product.image,
                     contentDescription = product.name,
                     contentScale = ContentScale.Fit,
                     modifier = Modifier

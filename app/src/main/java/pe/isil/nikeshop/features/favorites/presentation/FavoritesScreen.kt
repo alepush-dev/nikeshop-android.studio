@@ -34,10 +34,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil3.compose.AsyncImage
 import pe.isil.nikeshop.core.desingsystems.theme.AccentYellow
 import pe.isil.nikeshop.core.desingsystems.theme.CardBackground
 import pe.isil.nikeshop.core.desingsystems.theme.DarkNavy
-import pe.isil.nikeshop.features.home.data.InMemoryProductRepository
 import pe.isil.nikeshop.features.home.domain.Product
 import java.util.Locale
 
@@ -100,8 +100,8 @@ private fun FavoriteItem(
             modifier = Modifier.padding(12.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Image(
-                painter = painterResource(product.image),
+            AsyncImage(Produc
+                model = product.image,
                 contentDescription = product.name,
                 contentScale = ContentScale.Fit,
                 modifier = Modifier.size(90.dp)
@@ -153,15 +153,4 @@ private fun FavoriteItem(
             }
         }
     }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun FavoritesScreenPreview() {
-    val products = InMemoryProductRepository().getProducts()
-    FavoritesScreen(
-        favorites = listOf(products[1]),
-        cartIds = emptySet(),
-        onAddToCart = {}
-    )
 }

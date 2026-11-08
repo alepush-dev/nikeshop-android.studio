@@ -31,7 +31,6 @@ import pe.isil.nikeshop.core.desingsystems.theme.AccentYellow
 import pe.isil.nikeshop.core.desingsystems.theme.ScreenBackground
 import pe.isil.nikeshop.features.cart.presentation.CartScreen
 import pe.isil.nikeshop.features.favorites.presentation.FavoritesScreen
-import pe.isil.nikeshop.features.home.data.InMemoryProductRepository
 import pe.isil.nikeshop.features.home.presentation.HomeScreen
 import pe.isil.nikeshop.features.home.presentation.HomeState
 import pe.isil.nikeshop.features.home.presentation.HomeViewModel

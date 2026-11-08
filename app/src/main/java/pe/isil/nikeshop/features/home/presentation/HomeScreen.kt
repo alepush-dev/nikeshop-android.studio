@@ -38,7 +38,6 @@ import androidx.compose.ui.unit.sp
 import pe.isil.nikeshop.R
 import pe.isil.nikeshop.core.desingsystems.theme.AccentYellow
 import pe.isil.nikeshop.core.desingsystems.theme.DarkNavy
-import pe.isil.nikeshop.features.home.data.InMemoryProductRepository
 
 @Composable
 fun HomeScreen(

@@ -30,9 +30,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil3.compose.AsyncImage
 import pe.isil.nikeshop.core.desingsystems.theme.CardBackground
 import pe.isil.nikeshop.core.desingsystems.theme.DarkNavy
-import pe.isil.nikeshop.features.home.data.InMemoryProductRepository
 import pe.isil.nikeshop.features.home.domain.Product
 import java.util.Locale
 
@@ -118,8 +118,8 @@ private fun CartItem(product: Product) {
             modifier = Modifier.padding(12.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Image(
-                painter = painterResource(product.image),
+            AsyncImage(
+                model = product.image,
                 contentDescription = product.name,
                 contentScale = ContentScale.Fit,
                 modifier = Modifier.size(80.dp)
@@ -145,10 +145,3 @@ private fun CartItem(product: Product) {
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-fun CartScreenPreview() {
-    val products = InMemoryProductRepository().getProducts()
-    val inCart = listOf(products[0], products[2])
-    CartScreen(products = inCart, total = inCart.sumOf { it.price })
-}
